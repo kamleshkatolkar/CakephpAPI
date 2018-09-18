@@ -1,0 +1,57 @@
+{
+    "name": "friendsofcake/crud-view",
+    "description": "View layer for CRUD",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "crud",
+        "create",
+        "retrieve",
+        "update",
+        "delete",
+        "bake",
+        "cake",
+        "scaffold",
+        "scaffolding"
+    ],
+    "homepage": "https://github.com/FriendsOfCake/crud-view",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Winther",
+            "role": "Author",
+            "homepage": "http://cakephp.nu/"
+        },
+        {
+            "name": "Jose Diaz-Gonzalez",
+            "role": "Author",
+            "homepage": "http://josediazgonzalez.com/"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": "^3.5",
+        "friendsofcake/crud": "^5.4",
+        "friendsofcake/bootstrap-ui": "^1.4"
+    },
+    "require-dev": {
+        "friendsofcake/cakephp-test-utilities": "^1.0",
+        "markstory/asset_compress": "^3.2",
+        "phpunit/phpunit": "^5.7.14|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CrudView\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CrudView\\Test\\": "tests"
+        }
+    },
+    "support": {
+        "source": "https://github.com/FriendsOfCake/crud-view",
+        "issues": "https://github.com/FriendsOfCake/crud-view/issues",
+        "wiki": "http://cakephp.nu/cakephp-crud/",
+        "irc": "irc://irc.freenode.org/friendsofcake"
+    }
+}

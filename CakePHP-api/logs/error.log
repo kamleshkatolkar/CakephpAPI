@@ -1,0 +1,58 @@
+2018-09-07 11:47:01 Error: [PDOException] SQLSTATE[HY000]: General error: 14 unable to open database file in /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php on line 195
+Request URL: /
+Client IP: 103.252.168.235
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(195): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(195): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/BufferedStatement.php(64): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#4 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#5 /var/www/html/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(2107): Cake\Database\Query->execute()
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(2001): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#10 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1914): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#11 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#13 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#14 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#15 /var/www/html/vendor/cakephp/debug_kit/src/ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#16 /var/www/html/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#21 /var/www/html/index.php(16): require('/var/www/html/w...')
+#22 {main}
+
+
+2018-09-07 11:47:12 Error: [PDOException] SQLSTATE[HY000]: General error: 14 unable to open database file in /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php on line 195
+Request URL: /
+Client IP: 103.252.168.235
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(195): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(195): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/BufferedStatement.php(64): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#4 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#5 /var/www/html/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(2107): Cake\Database\Query->execute()
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(2001): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#10 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1914): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#11 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#13 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#14 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#15 /var/www/html/vendor/cakephp/debug_kit/src/ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#16 /var/www/html/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#21 /var/www/html/index.php(16): require('/var/www/html/w...')
+#22 {main}
+
+
